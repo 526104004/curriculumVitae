@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
@@ -9,7 +9,7 @@
         --vp-c-bg: #fff;
       }
 
-      [data-theme='dark'] {
+      [data-theme="dark"] {
         --vp-c-bg: #1b1b1f;
       }
 
@@ -19,25 +19,215 @@
       }
     </style>
     <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const userMode = localStorage.getItem("vuepress-color-scheme");
       const systemDarkMode =
-        'matchMedia' in window
-          ? window.matchMedia('(prefers-color-scheme: dark)').matches
-          : false
+        "matchMedia" in window
+          ? window.matchMedia("(prefers-color-scheme: dark)").matches
+          : false;
 
-      if (userMode === 'light') {
-        document.documentElement.dataset.theme = 'light'
-      } else if (userMode === 'dark' || systemDarkMode) {
-        document.documentElement.dataset.theme = 'dark'
+      if (userMode === "light") {
+        document.documentElement.dataset.theme = "light";
+      } else if (userMode === "dark" || systemDarkMode) {
+        document.documentElement.dataset.theme = "dark";
       }
     </script>
-    <title>VuePress</title><meta name="description" content="My first VuePress Site">
-    <link rel="preload" href="/assets/style-BLTwYwpQ.css" as="style"><link rel="stylesheet" href="/assets/style-BLTwYwpQ.css">
-    <link rel="modulepreload" href="/assets/app-CpyRoAxJ.js"><link rel="modulepreload" href="/assets/404.html-BaZhXa_d.js">
-    <link rel="prefetch" href="/assets/index.html-Cn1Milso.js" as="script"><link rel="prefetch" href="/assets/get-started.html-DSuuj5jz.js" as="script"><link rel="prefetch" href="/assets/archive1.html-eIbI3UMh.js" as="script"><link rel="prefetch" href="/assets/archive2.html-Dl8_ltIy.js" as="script"><link rel="prefetch" href="/assets/article1.html-YLQG8bnq.js" as="script"><link rel="prefetch" href="/assets/article10.html-DrB-5Xaf.js" as="script"><link rel="prefetch" href="/assets/article11.html-D8dvC7s9.js" as="script"><link rel="prefetch" href="/assets/article12.html-MfG1Y7Da.js" as="script"><link rel="prefetch" href="/assets/article2.html-CnIcSwYR.js" as="script"><link rel="prefetch" href="/assets/article3.html-043dRYUk.js" as="script"><link rel="prefetch" href="/assets/article4.html-DqJSpKv0.js" as="script"><link rel="prefetch" href="/assets/article5.html-dnAIdSJ-.js" as="script"><link rel="prefetch" href="/assets/article6.html-DUAycBfX.js" as="script"><link rel="prefetch" href="/assets/article7.html-Dh1U5AkB.js" as="script"><link rel="prefetch" href="/assets/article8.html-BLcm2cKe.js" as="script"><link rel="prefetch" href="/assets/article9.html-CfSHm2kZ.js" as="script"><link rel="prefetch" href="/assets/sticky.html-DZsh74oH.js" as="script"><link rel="prefetch" href="/assets/sticky2.html-CQSharTp.js" as="script"><link rel="prefetch" href="/assets/index.html-DrQTMmF-.js" as="script"><link rel="prefetch" href="/assets/index.html-Ge_DX-LG.js" as="script"><link rel="prefetch" href="/assets/index.html-BaM3QY-P.js" as="script"><link rel="prefetch" href="/assets/index.html-BvibLaUz.js" as="script"><link rel="prefetch" href="/assets/index.html-BgnP4iUP.js" as="script"><link rel="prefetch" href="/assets/index.html-DbXbonXL.js" as="script"><link rel="prefetch" href="/assets/index.html-CZE4_1gV.js" as="script"><link rel="prefetch" href="/assets/index.html-BRgoTMbo.js" as="script"><link rel="prefetch" href="/assets/index.html-Ct4gUMMy.js" as="script"><link rel="prefetch" href="/assets/index.html-2nvK3zzv.js" as="script"><link rel="prefetch" href="/assets/index.html-B0pXv3FB.js" as="script"><link rel="prefetch" href="/assets/index.html-vBZfCVRJ.js" as="script"><link rel="prefetch" href="/assets/index.html-DgjrHdq_.js" as="script"><link rel="prefetch" href="/assets/index.html-DBiIlQAW.js" as="script"><link rel="prefetch" href="/assets/index.html-BpXfkAMG.js" as="script">
+    <title>VuePress</title>
+    <meta name="description" content="My first VuePress Site" />
+    <link
+      rel="preload"
+      href="/curriculumVitae/assets/style-BLTwYwpQ.css"
+      as="style"
+    />
+    <link rel="stylesheet" href="/curriculumVitae/assets/style-BLTwYwpQ.css" />
+    <link rel="modulepreload" href="/curriculumVitae/assets/app-CpyRoAxJ.js" />
+    <link
+      rel="modulepreload"
+      href="/curriculumVitae/assets/404.html-BaZhXa_d.js"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-Cn1Milso.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/get-started.html-DSuuj5jz.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/archive1.html-eIbI3UMh.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/archive2.html-Dl8_ltIy.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article1.html-YLQG8bnq.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article10.html-DrB-5Xaf.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article11.html-D8dvC7s9.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article12.html-MfG1Y7Da.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article2.html-CnIcSwYR.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article3.html-043dRYUk.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article4.html-DqJSpKv0.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article5.html-dnAIdSJ-.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article6.html-DUAycBfX.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article7.html-Dh1U5AkB.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article8.html-BLcm2cKe.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/article9.html-CfSHm2kZ.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/sticky.html-DZsh74oH.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/sticky2.html-CQSharTp.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-DrQTMmF-.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-Ge_DX-LG.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-BaM3QY-P.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-BvibLaUz.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-BgnP4iUP.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-DbXbonXL.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-CZE4_1gV.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-BRgoTMbo.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-Ct4gUMMy.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-2nvK3zzv.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-B0pXv3FB.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-vBZfCVRJ.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-DgjrHdq_.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-DBiIlQAW.js"
+      as="script"
+    />
+    <link
+      rel="prefetch"
+      href="/curriculumVitae/assets/index.html-BpXfkAMG.js"
+      as="script"
+    />
   </head>
   <body>
-    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-424f4d3f><main class="page" data-v-424f4d3f><div class="theme-default-content" vp-content data-v-424f4d3f><h1 data-v-424f4d3f>404</h1><blockquote data-v-424f4d3f>How did we get here?</blockquote><a class="route-link" href="/" data-v-424f4d3f>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
-    <script type="module" src="/assets/app-CpyRoAxJ.js" defer></script>
+    <div id="app">
+      <!--[-->
+      <div class="vp-theme-container" vp-container data-v-424f4d3f>
+        <main class="page" data-v-424f4d3f>
+          <div class="theme-default-content" vp-content data-v-424f4d3f>
+            <h1 data-v-424f4d3f>404</h1>
+            <blockquote data-v-424f4d3f>How did we get here?</blockquote>
+            <a class="route-link" href="/" data-v-424f4d3f>Take me home</a>
+          </div>
+        </main>
+      </div>
+      <!--[--><!----><!--]--><!--]-->
+    </div>
+    <script
+      type="module"
+      src="/curriculumVitae/assets/app-CpyRoAxJ.js"
+      defer
+    ></script>
   </body>
 </html>
